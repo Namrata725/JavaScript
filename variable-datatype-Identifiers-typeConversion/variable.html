@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+
+<body>
+
+    <script>
+        let a = 5;
+        const b = 3;
+
+        console.log(`value of a is ${a}`);
+        console.log(`value of b is ${b}`);
+
+        a = 6;
+        b = 4; //error code not run after 
+
+        console.log(`value of a is ${a}`);
+
+        console.log(`value of b is ${b}`);
+
+        /* outcome
+        
+        value of a is 5
+        value of b is 3
+        Uncaught TypeError: Assignment to constant variable.
+
+        
+        */
+    </script>
+
+</body>
+
+</html>
