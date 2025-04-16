@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype</title>
+</head>
+<body>
+    
+
+    <script>
+        // primitive 
+
+        let roll=1;
+        let name='rahul';
+        let section= 'A';
+        let ispass=true;
+
+        console.log(`Roll no ${roll} \n Name: ${name} \n section ${section}\n Is pass: ${ispass} `)
+
+        /* output 
+
+        Roll no 1 
+        Name: rahul 
+        section A
+        Is pass: true 
+
+        */
+
+
+        //type 2 null and undefined 
+
+        let a= null;
+        console.log(a);
+
+        let b;
+        console.log(b)
+
+        /* output 
+
+        null
+        undefined
+
+        */
+
+        // lets calculate with null
+
+        console.log(`null+1 = ${a+1} `);
+        console.log(`null-1 = ${a-1} `);
+        console.log(`null*1 = ${a*1} `);
+        console.log(`null/1 = ${a/1} `);
+
+        /* output
+
+            null+1 = 1 
+            datatype.html:71 null-1 = -1 
+            datatype.html:72 null*1 = 0 
+            datatype.html:73 null/1 = 0 
+
+        */  
+
+        // lets calculate with undefined 
+
+        console.log(`undefined +1 = ${b+1} `);
+        console.log(`undefined -1 = ${b-1} `);
+        console.log(`undefined *1 = ${b*1} `);
+        console.log(`undefined /1 = ${b/1} `);
+
+        /* output 
+        
+        undefined +1 = NaN 
+        datatype.html:87 undefined -1 = NaN 
+        datatype.html:88 undefined *1 = NaN 
+        datatype.html:89 undefined /1 = NaN 
+        */
+
+        //NaN: Numbers resulting from invalid math operations like 1/0 or 0/0 are special.
+        
+    </script>
+</body>
+</html>
