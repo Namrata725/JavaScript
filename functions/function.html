@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        //simple function
+
+        function name(){
+            console.log('my name is namrata');
+        }
+
+        name()
+
+        //function with parameters 
+
+        function add(a, b) {
+            alert(`sum of a and b is ${a + b}`);
+            
+        }
+
+        let a = Number(prompt('input a '));
+        let b = Number(prompt('input b'));
+
+        if(isNaN(a)||isNaN(b)){
+            alert('input valid values only')
+        }
+        else{
+        add(a,b)
+        }
+
+        //arrow function
+
+
+        let sum2=()=>{
+
+            let sumNum=2+5;
+            console.log('sum', sumNum)
+        }
+
+        sum2()
+    </script>
+
+</body>
+
+</html>
