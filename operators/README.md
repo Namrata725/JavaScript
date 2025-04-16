@@ -100,9 +100,9 @@ Used for short, inline conditional expressions.
 
 ## Folder Structure
 
-- `arithmetic.js`: Shows usage of arithmetic operations.
-- `assignment.js`: Demonstrates assignment operators.
-- `comparison.js`: Contains examples of value comparisons.
-- `logical.js`: Contains multiple condition checks.
-- `string.js`: Covers string concatenation operations.
-- `ternary.js`: Shows how to use ternary operators.
+- `arithmetic.html`: Shows usage of arithmetic operations.
+- `assignment.html`: Demonstrates assignment operators.
+- `comparison.html`: Contains examples of value comparisons.
+- `logical.html`: Contains multiple condition checks.
+- `string.html`: Covers string concatenation operations.
+- `ternary.html`: Shows how to use ternary operators.
