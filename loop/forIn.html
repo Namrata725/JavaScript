@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+</head>
+
+<body>
+
+    <script>
+        const fruits = ['apple', 'banana', 'mango'];
+
+        //Using for...in with an array:
+
+        for (const index in fruits) {
+            console.log(index);
+            console.log(fruits[index]);
+        }
+
+        //output: 0, 1, 2 and apple, banana, mango
+
+
+        //Using for...in with an object:
+
+
+        const person = {
+            name: 'John',
+            age: 30,
+            city: 'New York'
+        };
+
+
+        for (const key in person) {
+            console.log(key);
+            console.log(person[key]);
+        }
+
+        //output :name, age, city
+        //output: John, 30, New York
+
+    </script>
+
+</body>
+
+</html>
