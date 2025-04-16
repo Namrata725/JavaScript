@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators</title>
+</head>
+<body>
+    
+    <script>
+
+        let a=true, b=false, c=true;
+        let a1=1, b1=0, c1=1;
+
+        console.log(`value of a = ${a} \nvalue of B = ${b} \nvalue of C = ${c}`);
+        console.log(`value of a1 = ${a1} \nvalue of B1 = ${b1} \nvalue of C1 = ${c1}`);
+
+        console.log(`a&&b= ${a&&b}`);
+        console.log(`a1&&c1= ${a&&c1}`);
+
+        console.log(`a||b= ${a||b}`);
+        console.log(`a1||c1= ${a||c1}`);
+
+        console.log(`a!=a1= ${a!=a1}`);
+        console.log(`a1||c1= ${a!=b}`);
+
+        /*output 
+
+        value of a = true 
+        value of B = false 
+        value of C = true
+        logicalOperators.html:20 value of a1 = 1 
+        value of B1 = 0 
+        value of C1 = 1
+        a&&b= false
+        a1&&c1= 1
+        a||b= true
+        a1||c1= true
+        a!=a1= false
+        a1||c1= true
+
+        */
+
+    </script>
+</body>
+</html>
