@@ -29,7 +29,7 @@ Used to perform different actions based on different possible values of a single
 ==========================================================================================
 
 ## Folder Structure
-- ifStatement.js: shows how to if condition work
-- ifElse.js: shows how to if else condition work
-- idElseIf.js : shows how to if else if condition work
-- switchCase.js: shows how to switch case work
+- ifStatement.html: shows how to if condition work
+- ifElse.html: shows how to if else condition work
+- ifElseIf.html : shows how to if else if condition work
+- switchCase.html: shows how to switch case work
