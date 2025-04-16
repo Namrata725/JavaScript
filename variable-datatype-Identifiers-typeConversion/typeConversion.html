@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    
+    <script>
+        let num=5;
+        console.log(`type of num=5 is = ${typeof num}`)
+
+         num = String(num);
+        console.log(`type of num=5 after type conversion to string  is= ${typeof num}`)
+
+        /*type of num=5 is = number
+            typconversion.html:17 type of num=5 after type conversion to string  is= string
+        */
+
+        let alpha ='235 a';
+        let alpha2= '2587';
+
+
+        
+        console.log(`type of alpha ='235 a' is = ${typeof alpha}`)
+        console.log(`type of alpha ='2587' is = ${typeof alpha2}`)
+
+
+        alpha= Number(alpha);
+        alpha2= Number(alpha2);
+        console.log(`type of alpha ='235 a' after type conversion to number  is= ${typeof alpha}`);
+        console.log(`type of alpha ='2587' after type conversion to number  is= ${typeof alpha2}`);
+
+
+        console.log(alpha)
+        console.log(alpha2)//NaN cause there is A in value 
+
+        if(isNaN(alpha)){
+
+            console.log('add only numbers ');
+
+        }
+       
+
+        /* output
+        
+        type of alpha ='235 a' is = string
+        typconversion.html:29 type of alpha ='2587' is = string
+        typconversion.html:34 type of alpha ='235 a' after type conversion to number  is= number
+        typconversion.html:35 type of alpha ='2587' after type conversion to number  is= number
+        typconversion.html:38 NaN
+        typconversion.html:39 2587
+        typconversion.html:43 add only numbers 
+        
+        */
+
+
+    </script>
+
+</body>
+</html>
