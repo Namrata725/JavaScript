@@ -2,7 +2,7 @@
 
 This folder contains notes and code examples that explain the basic building blocks of JavaScript: **Variable**, **Datatypes**, **Identifiers**, and **Type Conversion**.
 
-=======================================================================================================
+==========================================================================================
 ### **overview**
 JS is a scripting language used for making web pages interactive and controlling dynamic website content.  It is used for calculating, manipulating, and validating data.
 
@@ -17,7 +17,7 @@ JS is a scripting language used for making web pages interactive and controlling
     - For internal JS, we write all JS code inside <script> </script> tag
     - for external JS file we connect JS through <script scr='location'> </script>
 - we open  HTML in broswer and click inspect : element ->html, console->js console, messages, ouptput from console error messages.
-=======================================================================================================
+==========================================================================================
 
 ### **variable**
 
@@ -30,7 +30,7 @@ JS is a scripting language used for making web pages interactive and controlling
 - `let` – Block-scoped (recommended for values that may change).
 - `const` – Block-scoped and used for values that should not be reassigned.
 
-=======================================================================================================
+==========================================================================================
 
 ### **Datatype**
 
@@ -53,7 +53,7 @@ There are **3 types** of datatype in js.
 
 - **Object** – Used to store collections, including arrays, functions, and custom structures.
 
-=======================================================================================================
+==========================================================================================
 
 ## Identifiers
 Identifiers are names used to identify variables, functions, arrays, and objects.
@@ -65,7 +65,7 @@ Identifiers are names used to identify variables, functions, arrays, and objects
 - Should **not** be reserved keywords (like `let`, `function`, `return`, etc.)
 
 
-=======================================================================================================
+==========================================================================================
 
 ## Type Conversion
 
@@ -75,7 +75,7 @@ Sometimes, we have to convert the data type, like number to string or string to 
 - `Number()`
 - `Boolean()`
 
-=======================================================================================================
+==========================================================================================
 
 ## Folder Structure
 - variable.js: shows how to declear variables
@@ -83,4 +83,4 @@ Sometimes, we have to convert the data type, like number to string or string to 
 - identifiers.js : Shows rules and examples of valid identifiers
 - type conversion.js: See how type conversion works.
 
-=======================================================================================================
+==========================================================================================
