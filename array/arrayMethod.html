@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+<body>
+
+    <script>
+
+        //pop: delete arrays from end
+
+        let arr=[1,3,2,5,2,3,6,3];
+        let popelem=arr.pop();
+        console.log(popelem) // output : 3
+        console.log(arr); //outputt: (7) [1, 3, 2, 5, 2, 3, 6]
+
+        //push: add array at end
+        let pushArr=arr.push(12);
+        console.log(arr); //output :(8) [1, 3, 2, 5, 2, 3, 6, 12]
+
+        // tostring : convert array into string
+
+        console.log(typeof arr)// object
+
+        let tostringValue= arr.toString();
+        console.log(arr); (8)// [1, 3, 2, 5, 2, 3, 6, 12]
+        
+        console.log(typeof tostringValue)//string
+
+
+        //concat
+
+        let classA=[1,2,3,4,5];
+        let classB=[6,7,8,9];
+        let classC=[10];
+
+        let allClasses= classA.concat(classB).concat(classC);
+        console.log(allClasses) //(10) [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        //shift: remove from first
+
+        allClasses.shift();
+
+        console.log(allClasses)//(9) [2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+        //unshift: add to first
+
+        allClasses.unshift(1,2);
+        console.log(allClasses) //(11) [1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//slice: return a piece of array
+
+let sliceClass=allClasses.slice(1,4);
+        console.log(sliceClass) //(3) [2, 2, 3]
+
+        //splice: chnage original array/ use for add, remove and replace it have 3 prars: 1st index, 2nd from which index delete 3rd adding number
+
+        //add: im going to add 5 in 4th index
+        allClasses.splice(4,0,5);
+        console.log(allClasses) //(12) [1, 2, 2, 3, 5, 4, 5, 6, 7, 8, 9, 10]
+        // delete : im going to delete 6th index value=5 
+
+        allClasses.splice(6,1);
+
+        console.log(allClasses); //(11) [1, 2, 2, 3, 5, 4, 6, 7, 8, 9, 10]
+
+        //replace : im going to replace 1st index value= 2 by 0;
+
+        allClasses.splice(1,1,1);
+
+        console.log(allClasses) //(11) [1, 1, 2, 3, 5, 4, 6, 7, 8, 9, 10]
+
+        
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
