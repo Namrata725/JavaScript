@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods2</title>
+</head>
+<body>
+    <script>
+
+// map: work same as foreach but it create new array with the result of some operation. the value its callback returns are used to form new array
+
+MyArray=[1,6,4,8,1,2,10,6,5]
+let myNewArray=MyArray.map((element,index,MyArray)=>{
+
+    console.log(`the square of ${element} is ${element*element} its index is ${index} and full array is [${MyArray}]`)
+})
+
+//filter: create new array of element that give true for condition.
+
+let FilterArray=MyArray.filter(element=>{
+
+    return element %2==0;
+})
+
+//reduce:  if there are lots of inputs but we want single output then we can use reduce method
+
+let reducedArray=MyArray.reduce((res,curr)=>{
+
+return res+curr;
+
+})
+
+console.log(`sum of all no is ${reducedArray}`)
+
+
+
+
+    </script>
+</body>
+</html>
