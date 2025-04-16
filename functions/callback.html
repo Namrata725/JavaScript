@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call-back function</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        function add() {
+            let a = 1 + 2;
+            console.log(a);
+        }
+
+        function addnow(add) {
+            return add();
+        }
+
+        addnow(add);
+
+        //foreach : it is also a call back function
+
+        let arr = [1, 4, 2, 5, 6, 3, 9, 7, 5];
+        arr.forEach(function array(element) {
+
+            console.log(element)
+        })
+
+        //foreach arrow function
+
+
+        //1. console value in array only
+        arr.forEach(arrayValues = (element) => {
+            console.log(element);
+        })
+
+        //2. console value and index
+
+        arr.forEach(arrayValueIndex = (elements, index) => {
+
+            console.log(`${elements} = ${index}`)
+        })
+
+        //3.console value index and whole array
+
+        arr.forEach(arrayVlaueIndexArray=(element, arrayindex, array)=>{
+
+            console.log(element + ' = ' + arrayindex, array)
+        })
+
+        
+
+    </script>
+
+</body>
+
+</html>
