@@ -113,9 +113,7 @@ JavaScript allows interaction with element content using DOM properties through:
 ## **html/**
 
 
-- **`dom_overview.html`**: Contains the basic HTML structure for DOM overview.
-- **`access_elements.html`**: Demonstrates how JavaScript accesses and manipulates HTML elements.
-- **`children_vs_childnodes.html`**: Shows examples differentiating between `children` and `childNodes`.
+- **`dom_overview.html`**: Contains the basic HTML structure for DOM overview and shows accessing elements.
 - **`dom_selectors.html`**: HTML demonstrating the use of various element selection methods.
 - **`dom_properties.html`**: Displays HTML for interacting with DOM properties (like innerText, innerHTML).
 
@@ -125,8 +123,6 @@ JavaScript allows interaction with element content using DOM properties through:
 
 
 - **`dom_overview.css`**: Styling for the DOM overview page.
-- **`access_elements.css`**: Styles for elements that will be accessed and manipulated in JavaScript.
-- **`children_vs_childnodes.css`**: Styling for examples with `childNodes` vs `children`.
 - **`dom_selectors.css`**: CSS for the DOM selectors page.
 - **`dom_properties.css`**: CSS for the DOM property manipulation page.
 
@@ -136,8 +132,6 @@ JavaScript allows interaction with element content using DOM properties through:
 
 
 - **`dom_overview.js`**: JavaScript code for explaining the DOM overview and related concepts.
-- **`access_elements.js`**: JavaScript to access and manipulate HTML elements.
-- **`children_vs_childnodes.js`**: Differentiates between `childNodes` and `children` using JavaScript.
 - **`dom_selectors.js`**: Contains JS for selecting elements by ID, class, tag name, and querySelector.
 - **`dom_properties.js`**: JavaScript for interacting with DOM properties like `innerText`, `innerHTML`, and more.
 
