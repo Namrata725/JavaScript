@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let marks=[14,12,17,16,19];
+        console.log(marks)
+
+        console.log(marks[1]);
+
+        //output: [14, 12, 17, 16, 19]
+        //12
+
+        //looping in array-for-of loop
+        for(mark of marks){
+            console.log(mark);
+        }
+
+        //output 12
+        //  14
+        //  12
+        //  17
+        //  16
+        //  19
+
+
+        // amts =[100,250,640,50,900] printout 30% discount  amt and final values 
+
+        let amts =[100,250,640,50,900];
+        let discount=0;
+        let amtAfterDis;
+
+        for (const amt of amts) {
+            
+             discount=amt*30/100;
+            amtAfterDis= amt-discount;
+            console.log(`amt= ${amt}`) 
+            console.log(`discountamt= ${discount}`) 
+            console.log(`amt after discountamt= ${amtAfterDis}`) 
+
+        }
+
+        /* amt= 100
+            discountamt= 30
+            amt after discountamt= 70
+            amt= 250
+            discountamt= 75
+            amt after discountamt= 175
+            amt= 640
+            discountamt= 192
+            amt after discountamt= 448
+            amt= 50
+            discountamt= 15
+            amt after discountamt= 35
+            amt= 900
+            discountamt= 270
+            amt after discountamt= 630
+
+            */ 
+
+
+    </script>
+
+</body>
+</html>
