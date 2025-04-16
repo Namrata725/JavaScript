@@ -104,5 +104,4 @@ Used for short, inline conditional expressions.
 - `assignment.html`: Demonstrates assignment operators.
 - `comparison.html`: Contains examples of value comparisons.
 - `logical.html`: Contains multiple condition checks.
-- `string.html`: Covers string concatenation operations.
 - `ternary.html`: Shows how to use ternary operators.
