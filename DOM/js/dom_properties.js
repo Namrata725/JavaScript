@@ -21,4 +21,5 @@ div2.innerHTML='<h1>CHANGING HTML DOCS</h1>\n<p>thiS is updated code using js </
 //div 3 display is hidden but using text content we can get it and chnage it 
 let div3 = document.querySelector('#div3');
 div3.style.display = 'block'; 
-console.log('div3 is now visible');
+console.log(div3.children);
+div3.children[0].innerText=div3.children[0].innerText + '\n display is not none its block now from js';
