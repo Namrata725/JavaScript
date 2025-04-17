@@ -122,9 +122,8 @@ JavaScript allows interaction with element content using DOM properties through:
 ## **css/**
 
 
-- **`dom_overview.css`**: Styling for the DOM overview page.
-- **`dom_selectors.css`**: CSS for the DOM selectors page.
-- **`dom_properties.css`**: CSS for the DOM property manipulation page.
+- **`DOM.css`**: Styling for the DOM for all pages.
+
 
 ==========================================================================================
 
