@@ -132,6 +132,7 @@ JavaScript allows interaction with element content using DOM properties through:
 
 
 - **`dom_overview.js`**: JavaScript code for explaining the DOM overview and related concepts.
+- **`dom_tree_navigation.js`**: JavaScript code for demonstrating DOM tree navigation, including   accessing `parent`, `child`, and `sibling elements` using properties like `parentElement`, `children`, `nextElementSibling`, and `previousElementSibling`.
 - **`dom_selectors.js`**: Contains JS for selecting elements by ID, class, tag name, and querySelector.
 - **`dom_properties.js`**: JavaScript for interacting with DOM properties like `innerText`, `innerHTML`, and more.
 
