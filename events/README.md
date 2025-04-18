@@ -75,8 +75,6 @@ To remove an event listener, you must pass the **same function reference** that 
 #### Syntax:
 - `element.removeEventListener('eventType', callbackFunction);`
 
-> Note: Anonymous functions cannot be removed since there's no reference to them.
-
 ==========================================================================================
 
 ## Folder Structure
