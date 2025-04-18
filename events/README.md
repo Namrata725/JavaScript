@@ -83,6 +83,6 @@ To remove an event listener, you must pass the **same function reference** that 
 - event_handling.js: shows different types of events, event object usage
 - event_handling.html: contains HTML elements like buttons, with inline listener
 - event_handling.css: adds styling to the event handling demo
-- event_listensers.html: contains HTML elements like buttons
-- event_listensers.js: shows event listener and remove
+- event_listeners.html: contains HTML elements like buttons
+- event_listeners.js: shows event listener and remove
 ==========================================================================================
