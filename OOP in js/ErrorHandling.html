@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    
+<script>
+
+    
+let name= 'namrata';
+let age=25;
+
+console.log('name=', name);
+console.log('age= ',age);
+try{
+console.log('age=',ag); //lets make an error - we typing error only ag clicked instead of age
+}
+
+catch(err){
+    console.log(err);
+}
+console.log('age=',age);
+
+//output
+
+// name= namrata
+//  age=  25
+// ReferenceError: ag is not defined
+//age= 25
+    
+</script>
+
+</body>
+</html>
