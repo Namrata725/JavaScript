@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class class1{
+            hello(){
+                console.log('hello');
+            }
+
+            hi(){
+                console.log('hi');
+            }
+        }
+        class class2 extends class1{
+            world(){
+                console.log('its child world')
+            }
+        }
+
+        let child =new class2();
+        child.hello() //hello
+        child.hi()  //hi
+        child.world() //its child world
+
+        //example-2
+
+        class person{
+            eat(){
+                console.log('eat');
+            }
+            work(){
+                console.log('work')
+            }
+        }
+
+        class Doctor extends person{
+            work(){
+                console.log('doctor')
+            }
+        }
+
+        class Engineer extends person{
+            work(){
+                console.log('engineering')
+            }
+        }
+
+        let doctor= new Doctor(); //OBJECT AND CLASS NAME CAN'T BE SAME TO ADVANTAGE OF CASE SENSATIVE 
+        doctor.eat();
+        doctor.work();
+
+
+        let engineer = new  Engineer();
+        engineer.eat(); //eat
+        engineer.work(); //engineering
+
+    </script>
+</body>
+</html>
