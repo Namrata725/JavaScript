@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Keyword</title>
+</head>
+
+<body>
+
+    <script>
+
+        class person {
+
+            constructor() {
+
+                console.log('constructor created');
+            }
+
+            eat(){
+                console.log('eat');
+            }
+
+        }
+
+        // class Engineer extends person{
+        //     constructor(){
+        //         console.log('engineer')
+        //     }
+        // }
+
+        // let engineerObj=new Engineer();
+
+        //error occure
+
+        //superKey.html:29 Uncaught ReferenceError: Must call super constructor in derived class before accessing 'this' or returning from derived constructor
+    
+        //because if both classes have constructor it is necessary to call parents constructor 1st so have to use super keyword
+
+
+        class doctor extends person{
+            constructor(){
+                console.log('doctors constructor');
+                super();
+            }
+        }
+    
+        let doctorObj=new doctor(); //doctors constructor, constructor created
+
+        // we can pass value to constructor also
+
+        class parents{
+            constructor(name, work){
+
+                this.name=name;
+                this.work=work;
+            }
+
+        }
+
+        class RamSeeta extends parents{
+            constructor(name, work){
+                
+
+                super(name,work);
+
+                this.name='RamSeeta';
+                this.work='doctor';
+            }
+
+        }
+
+        let RamSeetaObj=new RamSeeta();
+        console.log(RamSeetaObj); //RamSeeta {name: 'RamSeeta', work: 'doctor'}
+
+    </script>
+
+</body>
+
+</html>
