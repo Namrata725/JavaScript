@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+
+        class animal{
+            constructor(){
+                console.log('constructors..');
+            }
+
+            type(){
+                console.log('type');
+            }
+        }
+
+        let dog= new animal(); //constructors..
+
+        //we can pass value also to constructors
+
+
+        class car {
+            constructor(brand){
+                this.brand=brand
+                console.log('brand = ', brand);
+            }
+        }
+
+        let toyota= new car('toyota'); //brand =  toyota
+
+        
+
+    </script>
+</body>
+</html>
