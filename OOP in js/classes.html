@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classes</title>
+</head>
+<body>
+    <script>
+
+        //creation of classes
+
+        class car{
+            start(){
+                console.log('start');
+            }
+            stop(){
+                console.log('stop');
+            }
+        }
+
+        let toyota =new car();
+        console.log(toyota); //car {}
+
+        // we can create mutiple objects for same classes
+
+        let furtuner= new car();
+        console.log(furtuner);
+
+        //we can pass value also
+
+        class programmingLanguage{
+
+            ProgramName(name){
+                this.name=name;
+                console.log(name)
+            }
+        }
+
+        let js=new programmingLanguage();
+        js.ProgramName('js'); //js
+
+                
+
+    </script>
+</body>
+</html>
