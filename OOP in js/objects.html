@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //objects in js
+
+        const students= {
+            name: 'namrata',
+            roll: 5,
+        }
+
+        console.log(students); //{name: 'namrata', roll: 5}
+        console.log(students.name) //namrata
+
+        //we can define functions also
+
+        const teachers={
+            name:'teacher-1',
+            Id:'101',
+            subject(){
+                subjectName:english;
+                console.log(this.subjectName);
+            }
+        }
+
+        console.log(teachers) //{name: 'teacher-1', Id: '101', subject: ƒ}
+        console.log(teachers.subject) //ƒ subject(){ subjectName:english; console.log(this.subjectName);}
+
+        //-----------------------------------------------------------------------------------------
+
+        //property
+
+        let array=['apple','banana','mango'];
+        console.log(array); //(3) ['apple', 'banana', 'mango']
+                            // 0: "apple"
+                            // 1: "banana"
+                            // 2: "mango"
+                            // length: 3
+                            // [[Prototype]]: Array(0)
+
+        array.push('litch');
+
+        console.log(array);
+
+        //protoype seen : this push, pop, lastIndexOf, map all are prototype
+
+        // creation of prototype;
+
+        const shopping={
+            discount(){
+                console.log('10% off');
+            }
+        }
+
+        const Ram={
+            fee:15000,
+        }
+
+        Ram.__proto__=shopping;
+
+        Ram.discount(); //10% off
+
+
+        //can create mutiple functions
+
+        const Hari={
+            fee: 20000,
+        }
+
+        Hari.__proto__=shopping;
+
+        Hari.shopping;
+        console.log(Hari.fee); //20000
+
+
+        //IF WE HAVE SAME FUNCTION objects function will over ride 
+
+        const shyam={
+            fee:25000,
+            discount(){
+                console.log('discount =15%')
+            }
+        }
+
+        shyam.shopping;
+        shyam.discount(); //discount =15%
+
+        
+
+    </script>
+</body>
+</html>
