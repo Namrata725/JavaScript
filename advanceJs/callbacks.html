@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+
+<body>
+    <script>
+        function sum(a, b) {
+            console.log(`a+b ${a + b}`);
+        }
+
+        function minus(a, b) {
+            console.log(`a-b= ${a - b}`);
+        }
+
+        function calc(a, b, callback) {
+            callback(a, b);
+        }
+
+        calc(4, 3, sum); //a+b 7
+        calc(4, 3, minus) //a-b= 1
+
+
+        //better way to arrow function
+
+
+        function calculate(no1, no2, calculateCallBack) {
+
+            calculateCallBack(no1, no2)
+        }
+
+        calculate(1, 2, (no1, no2) => {
+            console.log('sum=', no1 + no2);//sum= 3
+        })
+
+        //setTimeOut
+
+        function GetData(dataId) {
+            setTimeout(() => {
+                console.log('data Id=', dataId);//data Id= 123
+            }, 2000);
+        }
+
+        GetData(123);
+
+        //callback hell 
+
+        function getId(id, nextData){
+            setTimeout(() => {
+                console.log('data=',id);
+                if(nextData){nextData()}
+            }, 4000);
+        }
+
+        getId(1,()=>{
+            getId(2,()=>{
+                getId(3,()=>{
+                    getId(4)
+                })
+            })
+        })
+
+    </script>
+</body>
+
+</html>
