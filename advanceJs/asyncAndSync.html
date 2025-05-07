@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aynchronous and Synchronous</title>
+</head>
+
+<body>
+
+    <script>
+
+        //sync
+        console.log('one');
+        console.log('two');
+
+        //async
+
+        function three() {
+            console.log('three');
+        }
+
+        setTimeout(three, 2000);
+
+        setTimeout(() => {
+            console.log('four');
+        }, 4000);
+
+
+        console.log('five')
+
+    </script>
+
+</body>
+
+</html>
