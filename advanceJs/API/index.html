@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    <div class="container">
+        <h2 >Facts</h2>
+        <p class="id">hii</p>
+        <button >Click me for randome fact about dogs</button>
+    
+    
+    </div>
+
+    <script>
+        const para= document.querySelector('.id');
+        const button = document.querySelector('button');
+
+        const getData= async()=>{
+            
+               console.log('getting data....') ;
+               const URL='https://dogapi.dog/api/v2/facts';
+               let response= await fetch(URL);
+               console.log(response); //Response {type: 'cors', url: 'https://dogapi.dog/api/v2/facts', redirected: false, status: 200, ok: true, …}
+               console.log(response.status) //200;
+
+               let data= await response.json();
+               console.log(data);
+               let attributes=data.data[0].attributes.body;
+               console.log(attributes) //{body: 'During the Middle Ages, Great Danes and Mastiffs w…s to enter a battle or to defend supply caravans.'}
+
+                
+                console.log(para)
+                button.addEventListener('click', getData);
+                para.innerText=attributes;
+        }
+        getData()
+    </script>
+</body>
+</html>
+
+<style>
+    body{
+        background-color:  rgb(9, 9, 82);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 250px;
+        color: skyblue;
+    }
+
+    button{
+        
+        padding: 20px;
+        border-radius: 100px;
+        background-color: skyblue;
+        font-size: 20px;
+
+    }
+
+    div{
+        
+
+        font-family: 'Courier New', Courier, monospace;
+        
+        
+    }
+    h2{
+        font-size: 30px;
+        
+    }
+</style>
